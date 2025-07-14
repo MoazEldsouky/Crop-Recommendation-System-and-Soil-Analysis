@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Try Model - Tigers</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+        <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">
+            <i class="fas fa-leaf"></i>
+            <h1>GreenSense</h1>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="team.html">Team</a></li>
+            <li><a href="hardware.html">Hardware</a></li>
+            <li><a href="try-model.html" class="cta-button">Try Model</a></li>
+        </ul>
+    </nav>
+    <section class="try-model">
+        <h1>Try Our Crop Recommendation Model</h1>
+        <form id="crop-form">
+            <div class="form-group">
+                <label for="N">Nitrogen (N)</label>
+                <input type="number" id="N" name="N" required placeholder="Range: 0-140 mg/kg" min="0" max="140" step="any">
+                <div id="N-error" class="error-message"></div>
+            </div>
+            
+            <div class="form-group">
+                <label for="P">Phosphorus (P)</label>
+                <input type="number" id="P" name="P" required placeholder="Range: 5-145 mg/kg" min="5" max="145" step="any">
+                <div id="P-error" class="error-message"></div>
+            </div>
+            
+            <div class="form-group">
+                <label for="K">Potassium (K)</label>
+                <input type="number" id="K" name="K" required placeholder="Range: 5-205 mg/kg" min="5" max="205" step="any">
+                <div id="K-error" class="error-message"></div>
+            </div>
+            
+            <div class="form-group">
+                <label for="temperature">Temperature</label>
+                <input type="number" id="temperature" name="temperature" required placeholder="Range: 8-43 °C" min="8" max="43" step="any">
+                <div id="temperature-error" class="error-message"></div>
+            </div>
+            
+            <div class="form-group">
+                <label for="humidity">Humidity</label>
+                <input type="number" id="humidity" name="humidity" required placeholder="Range: 14-100%" min="14" max="100" step="any">
+                <div id="humidity-error" class="error-message"></div>
+            </div>
+            
+            <div class="form-group">
+                <label for="ph">pH</label>
+                <input type="number" id="ph" name="ph" required placeholder="Range: 3.5-9.9" min="3.5" max="9.9" step="any">
+                <div id="ph-error" class="error-message"></div>
+            </div>
+            
+            
+            <button type="submit">Get Recommendation</button>
+        </form>
+        <button type="button" id="reset-button" class="reset-button">Reset</button>
+        
+        <div id="loading" class="loading">
+            Processing your request...
+        </div>
+        
+        <div id="result">
+            <!-- Results will be injected here by JS -->
+        </div>
+    </section>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p><i class="fas fa-envelope"></i> info@greensense.com</p>
+                <p><i class="fas fa-phone"></i> +1 234 567 890</p>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="scripts/script.js"></script>
+</body>
+</html>
