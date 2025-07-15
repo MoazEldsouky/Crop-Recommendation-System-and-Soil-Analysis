@@ -110,7 +110,7 @@ Our RandomForestClassifier model achieved excellent results:
   - Moghazy Refaat (Developer Engineer)
   - Mohamed Omar (Web Developer)
   - Moaz El-Dsouky (Machine Learning Engineer)
-  - Saied El-Rahmany (Electrical Engineer)
+  - Elsaeed El-Rahmany (Electrical Engineer)
   - Ahmed Abo-Elkhair (Hardware Engineer)
   - Omar Eid (Software Engineer)
   - Omar Alaa (Hardware Engineer)
